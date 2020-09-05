@@ -1,7 +1,15 @@
 import React from "react";
 
-export const Header = ({}: any) => {
-  return <div>header</div>;
+import { useTheme } from "../../Theme";
+
+export const Header = () => {
+  const { state, dispatch } = useTheme();
+
+  return (
+    <div className="flex footer-layout" style={{ backgroundColor: state.primary }}>
+      <div>header</div>
+    </div>
+  );
 };
 
 export default Header;
