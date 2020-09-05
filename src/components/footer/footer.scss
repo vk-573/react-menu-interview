@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+
+.footer-layout {
+  padding: 6px;
+  flex-direction: row;
+  justify-content: center;
+  max-height:33px;
+  color: white;
+  font-weight: 700;
+  font-size:18px;
+  background-color: $dark-bg-first;
+  a {
+    margin: 0px 12px 0px 12px;
+  }
+  .circle {
+    border-radius: 50%;
+    position: relative;
+    border: 6px solid white;
+    background-color: $dark-bg-first;
+    // height: 76px;
+    // width: 76px;
+    bottom: 50px;
+  }
+  .icon {
+    margin-top:7px;
+    font-size:54px;
+    color: white;
+  }
+}

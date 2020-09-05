@@ -1,13 +1,23 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+
+import {
+  Home as HomeIcon,
+  MenuBook as MenuIcon
+} from "@material-ui/icons";
+import "./footer.scss";
 
 export const Footer = ({}: any) => {
   return (
-    <div>
-      <p>footer</p>
-      <NavLink exact to="/menu" activeClassName="hidden">go to menu</NavLink>
-      <NavLink exact to="/" activeClassName="hidden">go to home</NavLink>
+    <div className="flex footer-layout">
+      <div>regarder</div>
+      <NavLink className="circle" exact to="/menu" activeClassName="hidden">
+        <MenuIcon className="icon" />
+      </NavLink>
+      <NavLink className="circle" exact to="/" activeClassName="hidden">
+        <HomeIcon className="icon" />
+      </NavLink>
+      <div>le menu</div>
     </div>
   );
 };

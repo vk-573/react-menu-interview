@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.scss";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Header from "./components/header/header";
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div className="App-header">
+        <div className="main-layout">
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/menu" component={Menu} />
