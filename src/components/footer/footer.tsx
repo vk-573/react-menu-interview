@@ -6,7 +6,7 @@ import { useTheme } from "../../Theme";
 import "./footer.scss";
 
 export const Footer = ({}: any) => {
-  const {state, dispatch} = useTheme();
+  const { state, dispatch } = useTheme();
   return (
     <div className="flex footer-layout">
       <div>regarder</div>
@@ -17,7 +17,7 @@ export const Footer = ({}: any) => {
       <NavLink className="circle" exact to="/" activeClassName="hidden">
         <HomeIcon className="icon" />
       </NavLink>
-      <div onClick={() => dispatch("light")} >le menu</div>
+      <div onClick={() => dispatch("light")}>le menu</div>
     </div>
   );
 };

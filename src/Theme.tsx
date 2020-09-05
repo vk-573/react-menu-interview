@@ -17,12 +17,8 @@ const reducer = (state, action: string) => {
 export const ThemeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  return (
-    <ThemeContext.Provider value={{state, dispatch}}>
-      {children}
-    </ThemeContext.Provider>
-  );
-}
+  return <ThemeContext.Provider value={{ state, dispatch }}>{children}</ThemeContext.Provider>;
+};
 
 // custom hook
 export const useTheme = () => useContext(ThemeContext);
