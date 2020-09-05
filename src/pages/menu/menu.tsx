@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 
-export const Menu:FunctionComponent = ({}: any) => {
+export const Menu: FunctionComponent = ({}: any) => {
   return (
     <div>
       Votre menu
