@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from "react";
 
-interface theme {
+export interface theme {
   name: string;
   primary: string;
   secondary: string;
