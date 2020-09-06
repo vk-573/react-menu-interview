@@ -13,7 +13,6 @@ export const Menu: React.FC = () => {
       <div className="f-column">
         {/* la carte */}
         <Expand order={"primary"} title={content[0].name} categories={content[0].categories} />
-
         {/* boissons */}
         <Expand order={"primary"} title={content[1].name} categories={content[1].categories} />
       </div>

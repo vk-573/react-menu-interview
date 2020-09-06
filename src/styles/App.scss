@@ -16,19 +16,24 @@
 .flex {
   display: flex;
 }
-
 .f-column {
   display:flex;
   flex-direction: column;
 }
-
 .f-start {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.f-between {
+  justify-content: space-between;
+}
 
 .full-w {
   width: 100%;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .circle {

@@ -1,8 +1,7 @@
 .header-layout {
-  padding: 6px;
   flex-direction: row;
   justify-content: center;
-  max-height:33px;
+  max-height:18px;
   color: white;
   font-weight: 700;
   font-size:18px;
@@ -10,10 +9,22 @@
   div {
     width:100%;
   }
+  .first-div {
+    color:red;
+  }
   .switch {
     display:flex;
     justify-content: flex-end;
     position:relative;
-    top:42px;
+    top:22px;
+  }
+  .logo {
+    position:relative;
+    .berthom-logo {
+      height: 90px;
+      width: 90px;
+      border: 14px solid;
+      border-radius: 1em;
+    }
   }
 }

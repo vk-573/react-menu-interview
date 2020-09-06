@@ -2,11 +2,7 @@ import React from "react";
 
 import { useTheme } from "../../Theme";
 import { Switch } from "@material-ui/core";
-import { purple } from "@material-ui/core/colors";
-import { withStyles, makeStyles, createStyles } from "@material-ui/core/styles";
-
-// try to do just const styule = object
-// editing material default style
+import { withStyles, createStyles } from "@material-ui/core/styles";
 
 const styles = createStyles({
   switchBase: {
@@ -23,6 +19,7 @@ const styles = createStyles({
 });
 
 export const ColorSwitch = withStyles(styles)(({ classes }: any) => {
+  // triggers theme update
   const { dispatch } = useTheme();
 
   const switchChanged = (e: React.ChangeEvent<HTMLInputElement>) => {

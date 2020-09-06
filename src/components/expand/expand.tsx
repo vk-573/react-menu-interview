@@ -31,13 +31,13 @@ export const Expand: React.FC<{ order: string; title: string; categories: Array<
     return (
       <Expand key={category.name} order="secondary" title={category.name} categories={category.categories}>
         {category.products.map((product: IProduct) => (
-          <div key={product.label}>
+          <div key={product.label} className="f-column f-start full-w">
             <div>{product.label}</div>
-            <div>{product.description}</div>
+            <div className="font-light">{product.description}</div>
             {product.prices.map((price: IPrice) => (
-              <div key={price.label}>
+              <div key={price.label} className="full-w flex f-between">
                 <div>{price.label}</div>
-                <div>{price.price}</div>
+                <div>{price.price}€</div>
               </div>
             ))}
           </div>

@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
 import { ArrowDownward } from "@material-ui/icons";
 
-export const Home: FunctionComponent = ({}: any) => {
+export const Home: React.FC = () => {
   return (
     <div>
       <h2>Les Berthom</h2>
