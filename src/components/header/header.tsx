@@ -4,7 +4,7 @@ import { useTheme } from "../../Theme";
 import { ColorSwitch } from "../colorSwitch/colorSwitch";
 import "./header.scss";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   const { state } = useTheme();
 
   return (

@@ -5,11 +5,10 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { ThemeProvider } from "./Theme";
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
+import Layout from "./components/layout/layout";
 
 import Home from "./pages/home/home";
 import Menu from "./pages/menu/menu";
-
-// TODO add a a configurable layout with this.props.children && styled component structure
 
 function App() {
   return (
@@ -17,12 +16,12 @@ function App() {
       <div className="App">
         <ThemeProvider>
           <Header />
-          <div className="main-layout">
+          <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/menu" component={Menu} />
             </Switch>
-          </div>
+          </Layout>
           <Footer />
         </ThemeProvider>
       </div>

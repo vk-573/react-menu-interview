@@ -21,7 +21,7 @@ const reducer = (state: theme, action: string) => {
     case "dark":
       return { name: "dark", primary: "#1A1A1A", secondary: "#454545", text: "white" };
     case "light":
-      return { name: "light", primary: "#454545", secondary: "#454545", text: "white" };
+      return { name: "light", primary: "#454545", secondary: "white", text: "#454545" };
     default:
       return { name: "dark", primary: "#1A1A1A", secondary: "#454545", text: "white" };
   }

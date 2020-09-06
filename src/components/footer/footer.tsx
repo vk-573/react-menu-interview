@@ -6,7 +6,7 @@ import { Home as HomeIcon, MenuBook as MenuIcon } from "@material-ui/icons";
 import { useTheme } from "../../Theme";
 import "./footer.scss";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   const { state } = useTheme();
 
   const route = useLocation();
