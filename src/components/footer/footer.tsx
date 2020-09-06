@@ -14,6 +14,7 @@ export const Footer: React.FC = () => {
   return (
     <div className="flex footer-layout" style={{ backgroundColor: state.primary }}>
       <div>{route.pathname === "/menu" ? "Revenir" : "Découvrir"}</div>
+      {/* only one is active */}
       <NavLink className="circle" exact to="/menu" activeClassName="hidden" style={{ backgroundColor: state.primary }}>
         <MenuIcon className="icon" />
       </NavLink>

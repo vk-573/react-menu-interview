@@ -10,7 +10,7 @@ import Layout from "./components/layout/layout";
 import Home from "./pages/home/home";
 import Menu from "./pages/menu/menu";
 
-function App() {
+function App(): JSX.Element {
   return (
     <Router>
       <div className="App">

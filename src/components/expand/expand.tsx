@@ -5,7 +5,7 @@ import { Accordion, AccordionSummary, AccordionDetails } from "@material-ui/core
 import { ExpandMore as ExpandIcon } from "@material-ui/icons";
 import { ICategory, IPrice, IProduct } from "../../interfaces";
 
-// mapping colors because higher in order ExpandComponent must always have white text
+// mapping colors because highiest in order ExpandComponent must always have white text
 const getColorOrder = (order: string, state: ITheme) => {
   switch (order) {
     case "primary:":
@@ -57,7 +57,9 @@ export const Expand: React.FC<{ order: string; title: string; categories: Array<
         {title}
       </AccordionSummary>
       <AccordionDetails className="f-column f-start">
+        {/* children are the products */}
         {children}
+        {/* the category tree */}
         {nestedCategories}
       </AccordionDetails>
     </Accordion>

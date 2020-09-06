@@ -13,7 +13,11 @@ export const Header: React.FC = () => {
     <div className="flex header-layout" style={{ backgroundColor: state.primary }}>
       <div className="first-div"></div>
       <div className="logo">
-        <img src={BerthomLogo2} className="berthom-logo" style={{ borderColor: state.primary, backgroundColor: state.text }}/>
+        <img
+          src={BerthomLogo2}
+          className="berthom-logo"
+          style={{ borderColor: state.primary, backgroundColor: state.text }}
+        />
       </div>
       <div className="switch">
         <ColorSwitch />

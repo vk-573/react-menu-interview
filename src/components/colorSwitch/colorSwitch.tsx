@@ -4,6 +4,7 @@ import { useTheme } from "../../Theme";
 import { Switch } from "@material-ui/core";
 import { withStyles, createStyles } from "@material-ui/core/styles";
 
+// custom material switch style
 const styles = createStyles({
   switchBase: {
     color: "white",
