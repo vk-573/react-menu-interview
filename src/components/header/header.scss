@@ -1,0 +1,19 @@
+.header-layout {
+  padding: 6px;
+  flex-direction: row;
+  justify-content: center;
+  max-height:33px;
+  color: white;
+  font-weight: 700;
+  font-size:18px;
+  justify-content: space-between;
+  div {
+    width:100%;
+  }
+  .switch {
+    display:flex;
+    justify-content: flex-end;
+    position:relative;
+    top:42px;
+  }
+}

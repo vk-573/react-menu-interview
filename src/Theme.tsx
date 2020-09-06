@@ -1,21 +1,34 @@
 import React, { createContext, useContext, useReducer } from "react";
 
-const initialState = { name: "dark", primary: "#1A1A1A", secondary: "#454545" };
-const ThemeContext = createContext(initialState);
+interface theme {
+  name: string;
+  primary: string;
+  secondary: string;
+  text: string;
+}
 
-const reducer = (state, action: string) => {
+type ThemeContextType = {
+  state: theme;
+  dispatch: React.Dispatch<string>;
+};
+
+const initialState: theme = { name: "dark", primary: "#1A1A1A", secondary: "#454545", text: "white" };
+const ThemeContext = createContext<ThemeContextType>({ state: initialState, dispatch: () => "dark" });
+
+// to add more theme colors add new cases here
+const reducer = (state: theme, action: string) => {
   switch (action) {
     case "dark":
-      return { name: "dark", primary: "#1A1A1A", secondary: "#454545" };
+      return { name: "dark", primary: "#1A1A1A", secondary: "#454545", text: "white" };
     case "light":
-      return { name: "light", primary: "#454545", secondary: "#454545" };
+      return { name: "light", primary: "#454545", secondary: "#454545", text: "white" };
     default:
-      return { name: "dark", primary: "#1A1A1A", secondary: "#454545" };
+      return { name: "dark", primary: "#1A1A1A", secondary: "#454545", text: "white" };
   }
 };
 
-// higher order component
-export const ThemeProvider = ({ children }) => {
+// higher order component which links the ThemeContext to its children
+export const ThemeProvider: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return <ThemeContext.Provider value={{ state, dispatch }}>{children}</ThemeContext.Provider>;

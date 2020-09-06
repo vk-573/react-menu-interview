@@ -7,7 +7,8 @@ import { useTheme } from "../../Theme";
 import "./footer.scss";
 
 export const Footer = () => {
-  const { state, dispatch } = useTheme();
+  const { state } = useTheme();
+
   const route = useLocation();
 
   return (
